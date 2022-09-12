@@ -1,0 +1,9 @@
+node_modules/
+ejercicios/
+assets/
+index.html
+package-lock.json
+node_modules
+tsconfig.json
+webpack.config.js
+
