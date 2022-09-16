@@ -1,0 +1,10 @@
+th, td {
+    font-size: 16px;
+    padding:5px 10px;
+}
+
+.titulo {
+    text-align: center;
+    color: royalblue;
+    
+}

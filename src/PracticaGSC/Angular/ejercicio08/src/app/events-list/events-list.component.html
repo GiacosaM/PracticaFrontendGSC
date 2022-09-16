@@ -1,0 +1,24 @@
+<div>
+  <h3 [ngClass]="'titulo'">Listado de todos los eventos disponibles</h3>
+  <hr>
+
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Evento</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Dirección</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of events">
+      <tr>
+        <td>{{item?.name}}</td>
+        <td>{{item?.date}}</td>
+        <td>{{item?.time}}</td>
+        <td>{{item?.location?.address}} {{item?.location?.city}} {{item?.location?.country}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
