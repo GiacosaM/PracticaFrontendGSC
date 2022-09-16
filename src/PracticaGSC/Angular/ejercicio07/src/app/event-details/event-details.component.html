@@ -1,0 +1,34 @@
+
+<h1 [ngClass]="'titulo'">Detalle del evento</h1>
+<hr>
+  <div [ngClass] ="'contenedor'">
+        <div [ngClass] ="'detalle'"  style="margin-top:0.75rem;">
+        Evento:
+      </div>
+      <div [ngClass] ="'detalle'" >
+        Fecha:
+      </div>
+      <div [ngClass] ="'detalle'" >
+        Hora:
+      </div>
+      <div [ngClass] ="'detalle'" >
+        Direccion:
+      </div>
+  </div>
+
+  <div [ngClass] ="'contenedor'">
+    <div [ngClass] ="'datos'" style="margin-top:30px;">
+        {{ event.name }} 
+      </div>
+      <div [ngClass] ="'datos'">
+        {{ event.date }}
+      </div>
+      <div [ngClass] ="'datos'">
+        {{ event.time }}
+      </div>
+      <div [ngClass] ="'datos'">
+        {{ event.location.address }}, {{ event.location.city }}, {{ event.location.country }}
+      </div>
+  </div>
+
+
