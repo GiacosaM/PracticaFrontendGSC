@@ -1,0 +1,32 @@
+<h2> Detalle Evento</h2>
+<hr>
+
+
+<div class="row">
+
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Date</th>      
+            <th>Time</th>
+            <th>Address</th>
+            <th>Verificado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{evento?.name}}</td>
+            <td>{{evento?.date}} </td>      
+            <td>{{evento?.time}}</td>
+            <td>{{evento?.location?.address}} {{evento?.location?.city}} {{evento?.location?.country}}</td>
+            <td> <input type="checkbox" name="check" value="check" (change)="cambioValor($event)" > </td>
+          </tr>
+          
+            
+            
+        </tbody>
+      </table>
+      <button (click)="returnToEvents()"  class="btn btn-primary"> Volver a Eventos </button>
+      <!-- [routerLink]="['/eventos']" -->
+    </div>

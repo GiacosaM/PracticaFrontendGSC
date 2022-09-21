@@ -1,0 +1,42 @@
+<h2>All of the events should show below </h2>
+
+<div class="row">
+   
+    <div class="col">
+  
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          
+          <th>Event</th>
+          <th>Date</th>      
+          <th>Time</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let event of eve">
+          
+          <td> <a [routerLink]="['/detalle', event.id]" >{{event.name}} </a></td>
+          
+          <td>{{event.date}} </td>      
+          <td>{{event.time}}</td>
+          <td>{{event.location.address}}, {{event.location.city}}, {{event.location.country}}</td>
+          
+          
+        </tr>
+
+        <tr>
+          <td><a [routerLink]="['/detalle', 42]">Evento invalido</a></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          >
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  </div>
+  
+
