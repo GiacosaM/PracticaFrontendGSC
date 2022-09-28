@@ -1,0 +1,101 @@
+<div>
+  <form   
+        (ngSubmit)="guardar()" 
+        #miFormulario="ngForm"
+        autocomplete="off"
+        >
+
+    <div class="form-group">
+      <label for="event-name">Nombre del evento:</label>
+      <input 
+            id="event-name" 
+            type="text"
+            [(ngModel)]=initForm.name
+            name="name"
+            
+            required/>
+            <span class="alerta"
+            *ngIf="campoEsValido('name')"> Debe ingresar Nombre de Evento</span>
+    </div>
+    
+    <div class="form-group">
+      <label for="date">Fecha: </label>
+      <input 
+            id="date" 
+            type="date"
+            min="2022-01-01"
+            [(ngModel)]=initForm.date
+            #date="ngModel"
+            name="date"
+            dateValidate
+            date=initForm.date
+            required       
+            />
+            <span class="alerta"
+            *ngIf="date.errors?.['invalidDate']"> {{date.errors?.['message']}} </span> 
+        
+    </div>                  
+
+    <div class="form-group">
+      <label for="time">Hora: </label>
+      <input 
+            id="time" 
+            type="text"
+            [(ngModel)]="initForm.time"
+            name="time"
+            required/>
+            <span class="alerta"
+            *ngIf="campoEsValido('time')"> Debe Ingresar una hora del Evento </span>
+    </div>
+
+<div formGroupName="location">
+
+    <div class="form-group">
+      <label for="address">Dirección: </label>
+      <input 
+            id="address" 
+            type="text"
+            [(ngModel)]="initForm.location['address']"
+            name="address"
+            required/>
+            <span class="alerta"
+            *ngIf="campoEsValido('address')"> Debe ingresar un domicilio </span>
+    </div>
+    <div class="form-group">
+      <label for="city">Ciudad: </label>
+      <input 
+            id="city" 
+            type="text"
+            [(ngModel)]="initForm.location['city']"
+            name="city"
+            required
+            
+            />
+            <span class="alerta" 
+            *ngIf="campoEsValido('city')"> Debe ingresar una Ciudad </span>
+    </div>
+    <div class="form-group">
+      <label for="country">Pais: </label>
+      <input 
+            id="country" 
+            type="text"
+            [(ngModel)]="initForm.location['country']"
+            name="country"
+            required
+            maxlength="2"
+            
+            >
+            <span class="alerta"
+            *ngIf="campoEsValido('country')"> Debe ingresar un País (Formato AZ)</span>
+    </div>
+</div>
+
+    <button type="submit" class="btn btn-primary" [disabled] = "miFormulario.invalid" >Guardar</button>
+    
+    <button type="button" class="btn btn-default" (click)="cancel()">Cancelar</button>
+  </form>
+</div>
+
+<div class="row">
+  <div class="col">
+

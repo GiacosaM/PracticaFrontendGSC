@@ -1,0 +1,46 @@
+
+
+form {
+    margin-top: 10px;
+}                                                  
+
+label {
+    display: block;
+}        
+input {
+    margin-right: 1rem;
+}                                           
+
+.form-group {
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.btn {
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+.alerta {
+    border-radius: 0.30rem;
+    border-top-left-radius: 0.25rem;
+    padding: 0.25rem;
+    
+    border:none;
+    background-color: rgb(221, 170, 170);
+    border-color: red;
+    color: black;
+}
+
+.boton {
+    margin: 1.5rem;
+    border: 1px solid #2e518b;
+    padding: 10px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: 'Helvetica', sans-serif; 
+    border-radius: 50px;
+    }
+ 
