@@ -1,0 +1,53 @@
+<h1 class="m-3">Utilizando parámetros de consulta</h1>
+    <form>
+        <label class="m-3">Ciudad:</label>  
+        <input 
+            placeholder="Ingrese nombre"
+            type="text" 
+            name="city" 
+            [(ngModel)]="city">
+        <br><br />
+        <button
+            class="btn btn-primary m-3" 
+            type="submit" 
+            (click)="makeRequest()">
+            Obtener el pronóstico
+        </button>
+        <span *ngIf="hayError" class="alert alert-danger" role="alert"> Error en la Busqueda, Verifique la ciudad ingresada </span>    
+    </form>
+    
+
+    <div *ngIf="climaObject != null0" class="row m-3">
+        <div class="col">
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th> Ciudad</th>
+                <th> Pais</th>
+                <th> Temp. Max.</th>
+                <th> Temp. Min.</th>
+                <th> Huemedad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td> {{ climaObject.name}} </td>
+            <td> {{ climaObject.sys.country}} </td>
+            <td> {{ climaObject.main.temp_max}} °K</td>
+            <td> {{ climaObject.main.temp_min}} °K</td>
+            <td> {{ climaObject.main.humidity}} %</td>
+        </tbody>
+    </table>
+
+        </div>
+    </div>
+
+    
+    <!-- 
+    <div *ngIf="!hayError"> {{ climaObject | json}}</div>  -->
+
+
+
+    
+    
+    
