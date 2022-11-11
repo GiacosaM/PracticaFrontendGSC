@@ -1,0 +1,48 @@
+
+.agregar {
+    font-size: 10px;
+    line-height: 28px;
+
+}
+table {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+} 
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+td, th {
+    width: 25%;
+}
+
+td, th {
+    width: 15%;
+}
+
+.devuelto {
+    cursor: pointer;
+    color: #147d14;
+    
+}
+
+.delete {
+    cursor: pointer;
+    color: #bc4317;
+}
+.search {
+    cursor: pointer;
+}
+
+.center {
+    margin-top: 2rem;
+    display: grid;
+    place-items: center;
+    
+
+}
