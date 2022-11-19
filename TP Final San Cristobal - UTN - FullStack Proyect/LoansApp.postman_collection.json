@@ -1,0 +1,541 @@
+{
+	"info": {
+		"_postman_id": "2a768079-fe74-470d-986b-1c9c7586c692",
+		"name": "LoansApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19527792"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "GetCategory/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/category/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Maletas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7125/api/category",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutCategory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Money\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7125/api/category/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"category",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteByID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/category/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"category",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Thing",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/thing/getall",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"thing",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetThingsForCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/thing/1/things",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"thing",
+								"1",
+								"things"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetThingsById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/thing/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"thing",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetThingsByDescription",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/thing/m",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"thing",
+								"m"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostThingByCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Description\" : \"Destornillad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7125/api/thing/1/things",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"thing",
+								"1",
+								"things"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutByCategoy&ThingId",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Description\" : \"Minipimer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7125/api/thing/1/things/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"thing",
+								"1",
+								"things",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteByID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/thing/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"thing",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Person",
+			"item": [
+				{
+					"name": "PostPerson",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"name\": \"Jose\",\r\n    \"lastname\": \"Iglesias\",\r\n    \"email\": \"joseiglesias@gmail.com\",\r\n    \"telefono\": \"3434754125\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7125/api/Person/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"Person",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPersonById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/Person/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"Person",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutPerson",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"name\": \"Jose Gabriel\",\r\n    \"lastname\": \"ChechoIglesisas\",\r\n    \"email\": \"joseiglesias@hotmail.com\",\r\n    \"telefono\": \"01145221442\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7125/api/Person/9",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"Person",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/Person/getall",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"Person",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteByID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/Person/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"Person",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"martin@gmail.com\",\r\n    \"password\": \"1aS21!\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7125/api/acounts/registrar",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"acounts",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"martin@gmail.com\",\r\n    \"password\": \"1aS21!\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7125/api/acounts/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"acounts",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Loan",
+			"item": [
+				{
+					"name": "PostLoan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personId\": \"34\",\r\n    \"thingId\": \"33\",\r\n    \"Status\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7125/api/loan",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"loan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLoansByIdPerson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7125/api/loan/34",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7125",
+							"path": [
+								"api",
+								"loan",
+								"34"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
